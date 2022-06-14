@@ -45,7 +45,7 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
 
   # Linux Profile
   linux_profile {
-    admin_username = "touzria"
+    admin_username = "ghassen"
     ssh_key {
       key_data = var.ssh_public_key
     }
