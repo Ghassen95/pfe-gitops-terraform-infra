@@ -2,7 +2,7 @@
 variable "subscription_id" {
   type        = string
   description = "Azure account subscription ID"
-  default     = "53b8ff38-9c35-473b-9fc9-9562f9da43db"
+  default     = "c9f1d20d-93f8-4f21-89ca-fc1d23159e4b"
   sensitive   = true
 }
 
@@ -10,14 +10,14 @@ variable "subscription_id" {
 variable "tenant_id" {
   type        = string
   description = "Azure Service Principal tenant ID"
-  default     = "470498c0-975f-4d24-9391-3e4be3c30fd2"
+  default     = "65841dd3-a2c5-4c28-a795-4c66667b6e13"
 }
 
 # Azure client ID
 variable "client_id" {
   type        = string
   description = "Azure Service Principal client ID"
-  default     = "7f322fe4-a924-4e18-a61e-dfb47b566efa"
+  default     = "49ed09ea-8b32-4342-945f-2de5746b2ad6"
 }
 
 # Azure client secret
