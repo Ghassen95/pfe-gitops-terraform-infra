@@ -76,8 +76,9 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
     Environment = var.environment
   }
 }
-
+/*
 data "azurerm_log_analytics_workspace" "log-analytics-workspace" {
   name                = "aks-logs-analytics-workspace"
   resource_group_name = "pfe"
 }
+*/
