@@ -29,7 +29,7 @@ terraform {
   }
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "pfe-gitops" # Organization should already exists in Terraform Cloud
+    organization = "pfe-adactim" # Organization should already exists in Terraform Cloud
 
     workspaces {
       name = "pfe-gitops-terraform-infra"
