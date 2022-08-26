@@ -48,8 +48,8 @@ data "azuread_service_principal" "pfe-sp" {
 provider "azurerm" {
   features {}
   subscription_id = var.subscription_id
-  tenant_id       = data.azuread_service_principal.k8s-sp.application_tenant_id
-  client_id       = data.azuread_service_principal.k8s-sp.application_id
+  tenant_id       = data.azuread_service_principal.pfe-sp.application_tenant_id
+  client_id       = data.azuread_service_principal.pfe-sp.application_id
   client_secret   = var.client_secret
 }
 
