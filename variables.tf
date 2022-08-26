@@ -25,7 +25,6 @@ variable "client_secret" {
   type        = string
   description = "Azure Service Principal client secret"
   sensitive   = true
-  default = "b39b44cf-1c15-42da-99f8-a349acb924b0"
 }
 
 # Azure Location
