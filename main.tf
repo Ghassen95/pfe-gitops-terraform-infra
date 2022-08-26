@@ -40,8 +40,8 @@ terraform {
   }
 }
 
-data "azuread_service_principal" "k8s-sp" {
-  application_id = "7f322fe4-a924-4e18-a61e-dfb47b566efa"
+data "azuread_service_principal" "pfe-sp" {
+  application_id = "49ed09ea-8b32-4342-945f-2de5746b2ad6"
 }
 
 # Provider Block
