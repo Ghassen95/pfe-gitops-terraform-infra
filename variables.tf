@@ -38,7 +38,7 @@ variable "location" {
 variable "resource_group_name" {
   type        = string
   description = "This variable defines the Resource Group"
-  default     = "pfe-gitops"
+  default     = "pfe"
 }
 
 # Azure AKS Environment Name

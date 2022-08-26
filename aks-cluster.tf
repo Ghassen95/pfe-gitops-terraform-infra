@@ -60,7 +60,7 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
 
   # Linux Profile
   linux_profile {
-    admin_username = "touzria"
+    admin_username = "ghassen"
     ssh_key {
       key_data = var.ssh_public_key
     }
@@ -79,5 +79,5 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
 
 data "azurerm_log_analytics_workspace" "log-analytics-workspace" {
   name                = "aks-logs-analytics-workspace"
-  resource_group_name = "pfe-gitops"
+  resource_group_name = "pfe"
 }
