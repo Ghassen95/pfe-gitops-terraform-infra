@@ -45,19 +45,20 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
     admin_group_object_ids = [azuread_group.aks_administrators.id]
     azure_rbac_enabled     = true
   }
-
+  /*
   oms_agent {
     log_analytics_workspace_id = data.azurerm_log_analytics_workspace.log-analytics-workspace.id
   }
 
+  
+  microsoft_defender {
+    log_analytics_workspace_id = data.azurerm_log_analytics_workspace.log-analytics-workspace.id
+  }
+  */
   enable_pod_security_policy = true
   key_vault_secrets_provider {
     secret_rotation_enabled = true
   }
-  microsoft_defender {
-    log_analytics_workspace_id = data.azurerm_log_analytics_workspace.log-analytics-workspace.id
-  }
-
   # Linux Profile
   linux_profile {
     admin_username = "ghassen"
